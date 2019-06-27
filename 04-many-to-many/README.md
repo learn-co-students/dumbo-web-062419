@@ -16,6 +16,8 @@ What about an app that keeps track of all the plants in a house? What is the rel
 * A plant *belongs_to* a house
 * A house *has_many* plants
 
+<img src="./04-many-to-many/house-plant.png" />
+
 These are examples of a `One to Many` relationships... What about `Many to Many`?
 We want to build an app that lets users review movies. What is the relationship between `User` and `Movie`?
 
@@ -41,3 +43,5 @@ To actually set up the relationship however, **we need a join model**. In this c
 **Many to Many (Between `Movie` and `User`)**
 * A user has_many movies *through* reviews
 * A movie has_many users *through* reviews
+
+<img src="./04-many-to-many/user-review-movie.png" />
