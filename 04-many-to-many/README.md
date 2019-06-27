@@ -1,6 +1,6 @@
-## Many to Many Relationships
+# Many to Many Relationships
 
-### Let's Practice Domain Modelling: 
+## Let's Practice Domain Modelling: 
 Let's say we want to build a simple reddit clone where a user can make posts. What is the relationship between `User` and `Post`?
 
 
@@ -24,7 +24,7 @@ We want to build an app that lets users review movies. What is the relationship 
 * A user can review many movies (has_many)
 * A movie can be reviewed by many users (has_many)
 
-### We need a Join Model:
+## We need a Join Model:
 To actually set up the relationship however, **we need a join model**. In this case, `Review` would be perfect for that job. But what is the relationship between `Review` to `User` and `Movie`?
 
 
