@@ -5,6 +5,8 @@ Let's say we want to build a simple reddit clone where a user can make posts. Wh
 * One to Many
 * A user *has_many* posts
 * A post *belongs_to* a user
+
+
 What about an app that keeps track of all the plants in a house? What is the relationship?
 * One to Many (between `Plant` and `House`)
 * A plant *belongs_to* a house
@@ -18,14 +20,18 @@ We want to build an app that lets users review movies. What is the relationship 
 
 ### We need a Join Model:
 To actually set up the relationship however, **we need a join model**. In this case, `Review` would be perfect for that job. But what is the relationship between `Review` to `User` and `Movie`?
-* One to Many (Between `User` and `Review`)
+
+
+One to Many (Between `User` and `Review`)
 * A user can write many reviews (has_many)
 * A review is written by one user (belong_to)
 
-* One to Many (Between `Movie` and `Review`)
+
+One to Many (Between `Movie` and `Review`)
 * A movie can have many reviews written about it (has_many)
 * A review is written about a movie (belongs_to)
 
-* Many to Many (Between `Movie` and `User`)
+
+Many to Many (Between `Movie` and `User`)
 * A user has_many movies *through* reviews
 * A movie has_many users *through* reviews
