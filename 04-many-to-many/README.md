@@ -5,7 +5,9 @@ Let's say we want to build a simple reddit clone where a user can make posts. Wh
 * One to Many
 * A user *has_many* posts
 * A post *belongs_to* a user
+
 What about an app that keeps track of all the plants in a house? What is the relationship?
+
 * One to Many (between `Plant` and `House`)
 * A plant *belongs_to* a house
 * A house *has_many* plants
