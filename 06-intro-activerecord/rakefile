@@ -11,3 +11,8 @@ desc "says 👋"
 task :hello do
   puts "suppppp"
 end
+
+desc "give random fruit"
+task :random_fruit do
+  puts ["apples", "bananas", "oranges"].sample
+end

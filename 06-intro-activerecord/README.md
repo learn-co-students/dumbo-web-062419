@@ -2,7 +2,7 @@
 * Metaprogramming: Mass Assignment
 * Inheritance
 * ORM (Object Relational Mapping)
-* ActiveRecord!
+* ActiveRecord
   * rake
   * migrations
   * schema
