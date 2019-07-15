@@ -8,8 +8,26 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-    "Git Rich or die pryin"
-    # erb :welcome
+    @tagline = "Git Rich or Die Prying"
+    erb :home
   end
+
+  get '/students' do
+    @students = Student.order("name ASC")
+    erb :index
+  end
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 end
