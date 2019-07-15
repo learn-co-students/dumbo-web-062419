@@ -5,6 +5,11 @@
 ## Introduction to the internet
 
 * What is the difference between the Internet, the Web and a browser?
+
+- Internet is the physical stuff (wires)
+- Web is WWW -> Spit out websites
+- Browser is the interface (Client)
+
   * https://en.wikipedia.org/wiki/ARPANET
   * https://en.wikipedia.org/wiki/Tim_Berners-Lee
   * http://info.cern.ch/hypertext/WWW/TheProject.html
@@ -17,9 +22,15 @@
 
 * What is a server? What is a client?
 
+  Client - Us
+  Server - ESPN.com
+
 * What is the request / response cycle?
 
 * With a client and server, which makes the request? Which sends the response?
+
+  Client (Browser) makes the request
+  Server (Computer) sends the response
 
 * What is a HTTP request? Make a few, using at least two of these tools: Google Chrome, Postman, curl, telnet (this one is a little tricky!)
 
