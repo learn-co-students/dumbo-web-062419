@@ -1,0 +1,9 @@
+<h1>Hello, this is all the students</h1>
+
+<ul>
+  <% @students.each do |studentObject| %>
+    <li>
+      <%= studentObject.name_and_age %>
+    </li>
+  <% end %>
+</ul>
