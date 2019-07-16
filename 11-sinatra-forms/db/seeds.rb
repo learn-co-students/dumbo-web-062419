@@ -26,3 +26,30 @@ student_names = [
   "Daniel Fries",
   "Tony Lam"
 ]
+
+
+student_names.shuffle.each do |name|
+  Student.create(name: name, age: rand(18), hometown: "NYC")
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 
