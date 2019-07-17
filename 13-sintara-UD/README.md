@@ -25,10 +25,10 @@
 
 # RESTful CRUD
 * Reading ✅
-* New
-* Creating
-  * Form
-  * Mass assignment
+* New ✅
+* Creating ✅
+  * Form ✅
+  * Mass assignment ✅
 * Edit form
   * Nested params
 * Updating

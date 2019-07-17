@@ -1,0 +1,17 @@
+<h1>Editing Page</h1>
+
+<form action="/students/<%= @student.id %>" method="POST">
+    <input type="hidden" name="_method" value="PUT">
+
+    <label for="s_name">Name</label>
+    <input type="text" name="student[name]" id="s_name" value="<%= @student.name %>">
+
+    <label for="s_age">Age</label>
+    <input type="number" id="s_age" name="student[age]" value="<%= @student.age %>">
+
+    <label for="s_hometown">Home Town</label>
+    <input type="text" name="student[hometown]" id="s_hometown" value="<%= @student.hometown %>">
+
+    <input type="submit" value="Edit the Student">
+
+</form>
