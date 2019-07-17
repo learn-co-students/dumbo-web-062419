@@ -42,15 +42,13 @@ class ApplicationController < Sinatra::Base
 
   # CREATE
   post '/students' do
-    binding.pry
     @student = Student.create(params[:student])
-    # erb :show
     redirect to "/students/#{@student.id}"
+    # erb :show
   end
 
   # SHOW
   get '/students/:id' do
-    # binding.pry
     @student = Student.find(params[:id])
     @variable2 = "Hello"
     erb :show
