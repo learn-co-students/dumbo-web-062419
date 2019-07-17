@@ -24,27 +24,36 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  # NEW
+  get '/students/new' do
+    erb :new
+  end
+
+  # old params -> {
+  # "name"=>"Chumly", "age"=>"23", "hometown"=>"Chum Bucket", "submit"=>"Make a Student"
+  # }
+
+  # new_params -> {
+    # submit => "Make a Student",
+    # student => {
+      # "name"=>"Chumly", "age"=>"23", "hometown"=>"Chum Bucket"
+    # }
+  # }
+
+  # CREATE
+  post '/students' do
+    binding.pry
+    @student = Student.create(params[:student])
+    # erb :show
+    redirect to "/students/#{@student.id}"
+  end
+
   # SHOW
   get '/students/:id' do
     # binding.pry
     @student = Student.find(params[:id])
+    @variable2 = "Hello"
     erb :show
   end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 end
