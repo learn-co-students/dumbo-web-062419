@@ -24,7 +24,18 @@
 </form>
 
 
+<h2>Horses in your stable</h2>
+<ul>
 
+  <% @student.horses.each do |horse| %>
+    <li>
+      <a href="/horses/<%= horse.id %>">
+        <%= horse.name %> - Breed: <%= horse.breed %>
+      </a>
+    </li>
+  <% end %>
+
+</ul>
 
 
 

@@ -1,0 +1,15 @@
+<h1>Horse Show</h1>
+
+<p>
+  <%= @horse.name %>
+</p>
+
+<p>
+  <%= @horse.breed %>
+</p>
+
+<p>
+  <a href="/students/<%= @horse.student_id %>">
+    Owned By: <%= @horse.student.name %>
+  </a>
+</p>
