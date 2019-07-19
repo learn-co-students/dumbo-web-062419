@@ -1,6 +1,9 @@
 <h1>Show</h1>
 
 <%= link_to "All the Unicorns in the Kingdom", unicorns_path %>
+<%= link_to "Edit this Unicorn", edit_unicorn_path(@unicorn) %>
+
+<%= button_to "Take this Unicorn to the Farm Upstate", unicorn_path(@unicorn), method: :delete %>
 
 <p>
   Name: <%= @unicorn.name %>
