@@ -1,0 +1,2 @@
+class Unicorn < ApplicationRecord
+end
