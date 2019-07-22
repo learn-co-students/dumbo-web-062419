@@ -3,6 +3,7 @@ Unicorn.create(name: "Mr. Sparkle Face", shoe: 6, horn: 3)
 Unicorn.create(name: "Peter", shoe: 12, horn: 1)
 Unicorn.create(name: "Kissinger", shoe: 12, horn: 12)
 Unicorn.create(name: "Longhorn", shoe: 1, horn: 0)
+
 Leprechaun.create(name: "Lucky", gold_count: rand(100), height: rand(10))
 Leprechaun.create(name: "Elbert", gold_count: rand(100), height: rand(10))
 Leprechaun.create(name: "Sneezy", gold_count: rand(100), height: rand(10))

@@ -16,3 +16,52 @@
 <p>
   height: <%= @leprechaun.height %>
 </p>
+
+
+<h2>Log a Quest</h2>
+
+<%= form_for @quest do |f| %>
+
+  <%= f.hidden_field :leprechaun_id, value: @leprechaun.id %>
+  
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :unicorn_id %>
+  <%= f.collection_select(:unicorn_id, @unicorns, :id, :name) %>
+  <%= f.submit %>
+<% end %>
+
+
+
+
+
+
+
+
+<h2>All the Quests</h2>
+
+<ul>
+  <% @leprechaun.quests.each do |quest| %>
+    <li>
+      <%= quest.name %> - <%= link_to "#{quest.unicorn.name} is the Unicorn", unicorn_path(quest.unicorn) %>
+    </li>
+  <% end %>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  -->

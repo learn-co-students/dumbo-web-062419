@@ -6,6 +6,8 @@ class LeprechaunsController < ApplicationController
   end
 
   def show
+    @quest = Quest.new
+    @unicorns = Unicorn.all
   end
 
   def new
