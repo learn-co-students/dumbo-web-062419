@@ -1,0 +1,14 @@
+<h1>Hello, this is the index page.</h1>
+
+<%= link_to "Make your dreams fly", new_unicorn_path %>
+
+<ul>
+  <% @unicorns.each do |uni| %>
+    <li>
+      <%= link_to uni.name, uni %>
+      <%# link_to uni.name, unicorn_path(uni) %>
+      <%# link_to uni.name, unicorn_path(uni.id) %>
+      <%# link_to uni.name, "/unicorns/#{uni.id}" %>
+    </li>
+  <% end %>
+</ul>
