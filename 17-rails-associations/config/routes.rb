@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :leprechauns
   resources :unicorns
   # get "/unicorns", to: "unicorns#index", as: "unicorns"
   # get "/unicorns/:id", to: "unicorns#show", as: "unicorn"

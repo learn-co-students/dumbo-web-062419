@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_18_183848) do
+ActiveRecord::Schema.define(version: 2019_07_22_133556) do
+
+  create_table "leprechauns", force: :cascade do |t|
+    t.string "name"
+    t.integer "gold_count"
+    t.integer "height"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "unicorns", force: :cascade do |t|
     t.string "name"

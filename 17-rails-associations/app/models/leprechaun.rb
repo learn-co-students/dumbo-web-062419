@@ -1,0 +1,2 @@
+class Leprechaun < ApplicationRecord
+end

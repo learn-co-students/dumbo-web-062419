@@ -1,0 +1,18 @@
+<h1>Show</h1>
+
+<%= link_to "All the Leprechauns", leprechauns_path %>
+<%= link_to "Edit this Leprechaun", edit_leprechaun_path(@leprechaun) %>
+
+<%= button_to "Take this Leprechaun to the Farm Upstate", leprechaun_path(@leprechaun), method: :delete %>
+
+<p>
+  Name: <%= @leprechaun.name %>
+</p>
+
+<p>
+  Gold: <%= @leprechaun.gold_count %>
+</p>
+
+<p>
+  height: <%= @leprechaun.height %>
+</p>
