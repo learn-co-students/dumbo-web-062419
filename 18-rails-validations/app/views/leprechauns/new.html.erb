@@ -1,11 +1,2 @@
 <h1>New Leprechaun</h1>
-
-<%= form_for @leprechaun do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :gold_count %>
-  <%= f.number_field :gold_count %>
-  <%= f.label :height %>
-  <%= f.number_field :height %>
-  <%= f.submit %>
-<% end %>
+<%= render "form" %>

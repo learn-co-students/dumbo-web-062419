@@ -15,16 +15,28 @@ class LeprechaunsController < ApplicationController
   end
 
   def create
-    @leprechaun = Leprechaun.create(leprechaun_params)
-    redirect_to @leprechaun
+    # byebug
+    @leprechaun = Leprechaun.new(leprechaun_params)
+    if @leprechaun.valid?
+      @leprechaun.save
+      redirect_to @leprechaun
+    else
+      flash[:errors] = @leprechaun.errors.full_messages
+      # render :new
+      redirect_to new_leprechaun_path
+    end
   end
 
   def edit
   end
 
   def update
-    @leprechaun.update(leprechaun_params)
-    redirect_to leprechaun_path(@leprechaun)
+    if @leprechaun.update(leprechaun_params)
+      redirect_to leprechaun_path(@leprechaun)
+    else
+      flash[:errors] = @leprechaun.errors.full_messages
+      redirect_to edit_leprechaun_path(@leprechaun)
+    end
   end
 
   def destroy
