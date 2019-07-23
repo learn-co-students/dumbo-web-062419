@@ -1,0 +1,11 @@
+<h1>Form To Make a New Unicorn</h1>
+
+<%= form_for @unicorn do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :horn %>
+  <%= f.number_field :horn %>
+  <%= f.label :shoe %>
+  <%= f.number_field :shoe %>
+  <%= f.submit %>
+<% end %>

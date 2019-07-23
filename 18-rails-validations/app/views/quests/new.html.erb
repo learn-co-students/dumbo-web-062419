@@ -1,0 +1,13 @@
+<h1>Log A New Quest</h1>
+
+<%= form_for @quest do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :unicorn_id %>
+  <%= f.collection_select(:unicorn_id, @unicorns, :id, :name) %>
+
+  <%= f.label :leprechaun_id %>
+  <%= f.collection_select :leprechaun_id, @leprechauns, :id, :name %>
+  <%= f.submit %>
+<% end %>
