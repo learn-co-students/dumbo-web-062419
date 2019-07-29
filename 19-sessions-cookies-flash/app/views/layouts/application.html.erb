@@ -11,7 +11,14 @@
 
   <body>
     <header>
-      <h2>Votes remaining: <%= 5 %></h2>
+      <h2>Votes remaining: <%= @votes_remaining %></h2>
+
+      <% if @message %>
+        <p class="message">
+          <%= @message %>
+        </p>
+      <% end %>
+      
     </header>
     <%= yield %>
   </body>
