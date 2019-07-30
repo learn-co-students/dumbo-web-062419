@@ -12,7 +12,13 @@
   <body>
     <header>
 
-        <h2>Votes remaining: <%= 5 %></h2>
+      <h2>Votes remaining: <%= 5 %></h2>
+
+      <% if flash[:message] %>
+        <p class="message">
+          <%= flash[:message] %>
+        </p>
+      <% end %>
 
     </header>
     <%= yield %>
