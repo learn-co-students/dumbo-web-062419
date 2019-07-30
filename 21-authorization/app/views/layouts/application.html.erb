@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Favorite colors</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+
+      <h2>Votes remaining: <%= 5 %></h2>
+
+      <% if flash[:message] %>
+        <p class="message">
+          <%= flash[:message] %>
+        </p>
+      <% end %>
+
+    </header>
+    <%= yield %>
+  </body>
+</html>
