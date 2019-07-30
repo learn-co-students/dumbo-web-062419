@@ -5,6 +5,16 @@ class User < ApplicationRecord
   has_many :votes
   has_many :colors, through: :votes
 
+
+  def remaining_votes
+    10 - self.votes.count
+  end
+
+  def can_vote
+    # self.votes.count < 10
+    remaining_votes > 0
+  end
+  
   # def password=(pass)
   #   self.password_digest = BCrypt::Password.create(pass)
   # end

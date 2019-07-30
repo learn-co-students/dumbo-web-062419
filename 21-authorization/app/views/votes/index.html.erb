@@ -1,0 +1,12 @@
+<h1>All of <%= @current_user.username %>'s votes</h1>
+
+<ul>
+
+  <% @votes.each do |vote| %>
+    <li>
+        <%= vote.color.hex %>
+      <%= button_to "X", vote_path(vote), method: :delete, class: "none" %>
+    </li>
+  <% end %>
+
+</ul>

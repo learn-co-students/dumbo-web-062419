@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+  ## skip_before_action :authorized, only: [:new, :create]
   def new
     @user = User.new
   end
@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   def create
     @user = User.create(user_params)
     if @user.valid?
+      session[:user_id] = @user.id
       redirect_to colors_path
     else
       flash[:errors] = @user.errors.full_messages

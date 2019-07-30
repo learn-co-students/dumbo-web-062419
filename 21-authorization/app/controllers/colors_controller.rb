@@ -1,4 +1,5 @@
 class ColorsController < ApplicationController
+  # skip_before_action :authorized, only: [:index]
 
   def index
     if request.path != colors_path
