@@ -1,0 +1,79 @@
+# Introduction to JavaScript
+✅ Paren party
+✅ Introduction to you
+✅ Lecture & other norms
+* Overview of the mod
+  ✅ Learning a second language; gaining another superpower
+  ✅ Three essential pillars of front-end web programming
+    ✅ Three essential pillars of JS
+  ✅ Schedule
+    * Week 1 - Becoming a front-end developer
+    * Week 2 - Becoming a better front-end developer
+    * Week 3 - Project week & understanding JS fundamentals
+
+# Key Questions
+✅ What can JavaScript do?
+✅ Where does Javascript run?
+✅ What is Javascript for?
+✅ How old is Javascript? Where did it come from?
+✅ Where did JavaScript come from? What has happened to JavaScript since then?
+  ✅ Why is JavaScript is a garbage language?
+  ✅ Why is JavaScript also amazing and worth learning?
+✅ How can I write JavaScript without wanting to tear my eyeballs from their sockets?
+
+# DOM questions
+✅ What is the DOM and why do I care about it?
+✅ What does it mean that the DOM is a tree?
+✅ What are the key parts of an HTML tag?
+  ✅ What is an attribute?
+  ✅ What is an ID?
+  ✅ What are classes, how many can I have, and how can I tell how many I have?
+✅ How do I:
+  ✅ Find an existing DOM element
+    * inside of an existing DOM element?!?!?!?
+  ✅ What can I do with a DOM element?
+    ✅ innerText
+    ✅ innerHTML
+    * value
+    * id
+    * className
+    * classList
+    * dataset
+    * children
+    * parentNode
+  * Create a new DOM element (and slap it on the DOM)
+  * Remove a DOM element
+* Where do I, like, write my actual JS and how do I make my HTML know about it
+* Which of the 5 ways to find an element is the best one?
+
+https://github.com/learn-co-curriculum/lectures-starter-code/tree/master/javascript/dom-intro#manipulating-the-dom-with-javascript-chart
+
+# JS Basics
+* What are the 7 basic data types in JS? How are they similar and different from Ruby?
+* What kinds of variables are there in JS? How are they similar and different?
+* What are functions? How are they like methods? How are they different?
+* What are properties? How are they similar to attributes? How are they different? 
+
+# Kevin's cool sites
+https://github.com/learn-co-students/dumbo-web-031119/tree/master/21-intro-to-front-end-web
+
+# Cool sites
+https://patatap.com/
+https://bellwoods.xyz/
+http://www.fallingfalling.com/
+http://eelslap.com/
+http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html
+https://theuselessweb.com/
+
+# Stuff I made in JS one time
+https://www.fuckyeahgtj.com/tetris/
+https://www.fuckyeahgtj.com/webgl-hyperspace/
+http://www.fieldmuseum.org/discover/on-exhibit/specimens/
+http://www.fieldmuseum.org/discover/on-exhibit/greeks/
+
+# Cool frameworks (not an exhaustive list)
+https://p5js.org/
+http://paperjs.org/examples/
+https://threejs.org/examples/
+https://two.js.org/examples/
+

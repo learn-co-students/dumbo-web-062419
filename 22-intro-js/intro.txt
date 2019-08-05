@@ -1,0 +1,9 @@
+
+Introduction protocol:
+
+1) What's your name (the one you want me and other people to call you)?
+2) What are your pronouns (the words you want people to call you when they're not using your whole name, e.g. they/them, she/her, ze/hir, he/him)
+3) What are you excited to build using JavaScript?
+
+
+
