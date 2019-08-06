@@ -34,16 +34,16 @@
   ✅ What can I do with a DOM element?
     ✅ innerText
     ✅ innerHTML
-    * value
-    * id
-    * className
-    * classList
-    * dataset
-    * children
-    * parentNode
+    ✅ value
+    ✅ id
+    ✅ className
+    ✅ classList ≠
+    ✅ dataset ≠
+    ✅ children ≠
+    ✅ parentNode ≠
   * Create a new DOM element (and slap it on the DOM)
   * Remove a DOM element
-* Where do I, like, write my actual JS and how do I make my HTML know about it
+✅ Where do I, like, write my actual JS and how do I make my HTML know about it
 * Which of the 5 ways to find an element is the best one?
 
 https://github.com/learn-co-curriculum/lectures-starter-code/tree/master/javascript/dom-intro#manipulating-the-dom-with-javascript-chart
