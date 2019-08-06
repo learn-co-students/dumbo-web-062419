@@ -30,12 +30,3 @@ As a user I want...
 * anything I click on should have an emoji added to its innerText
 * to hover over any li and have its background color change to pink
 
-# Actual Deliverables
-* to be able to click the button and add a taco emoji to the list
-* to be able to click any emoji and change it to a coconut
-* to be able to right-click an emoji and delete it
-* to be able to click an emoji and cycle through ["🍩", "🌮", "🥥", "🍣"]
-
-
-
-

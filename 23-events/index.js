@@ -1,37 +1,46 @@
 
-
-
-
-// function doTheThing(argument) {
-//   console.log("hi was clicked everything is great")
-//   // console.log(argument);
-//   // return 5;
-//   // return "🥔"
-// }
-
-
-// const returnValue = doTheThing("hello"); // calling the function
-// const something = doTheThing; // does not call the fn
-
-// // console.log(returnValue);
-// console.log(doTheThing);
-// // console.log(something);
-
-// // console.log(something === doTheThing);
-
-
 const tacoButton = document.getElementById("taco")
+const ul = document.getElementById("blobs")
+
+function deleteMe(event){
+  event.preventDefault()
+  // console.log(this)
+  event.target.remove()
+}
 
 tacoButton.addEventListener("click", function(){
-  // console.log(foo, bar, bax, quux)
-  alert("Hello!")
+
+  // create a list item
+  const li = document.createElement("li")
+
+  // add a friggin taco
+  li.innerText = "🌮"
+
+  li.addEventListener("contextmenu", deleteMe)
+  li.addEventListener("click", itemClicked)
+
+  // appending the list item to the list
+  ul.append(li)
+
 })
 
+const lis = document.querySelectorAll("li")
+
+function itemClicked(event){
+  event.target.innerText = "🥥"
+}
 
 
-document.addEventListener("scroll", makeSound)
+function doThisToEachLiPlease(item){
+  item.addEventListener("contextmenu", deleteMe)
+  item.addEventListener("click", itemClicked)
+}
 
+lis.forEach(doThisToEachLiPlease)
 
+// lis.addEventListener("click", function(){
+
+// })
 
 
 
