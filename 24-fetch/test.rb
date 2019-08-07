@@ -7,8 +7,8 @@ puts "whatever"
 
 # do some stuff
 
-# puts "before"
-# puts RestClient.get("https://dog.ceo/api/breeds/image/random")
-# puts "after"
+puts "before"
+puts RestClient.get("https://dog.ceo/api/breeds/image/random")
+puts "after"
 
 # print out the results
