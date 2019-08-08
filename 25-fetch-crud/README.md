@@ -23,5 +23,36 @@
   a. Add a new to-do LI
 
 ## Update
+1. When X event happens
+  a. click on the checkbox
+2. Make Y fetch happen
+  a. PATCH /to-do-items/:id
+3. Slap Z on the DOM!
+  a. Give the LI a class of "done"
+
 ## Delete
+1. When X event happens
+  a. click x button
+2. Make Y fetch happen
+  a. DELETE /to-do-items/:id
+3. Slap Z on the DOM!
+  a. LI off the DOM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

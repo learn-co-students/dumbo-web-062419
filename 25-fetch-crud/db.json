@@ -8,27 +8,7 @@
     {
       "title": "Learn how to apply Fetch to front-end problems",
       "id": 3,
-      "done": false
-    },
-    {
-      "title": "WHEEEEEE",
-      "done": false,
-      "id": 4
-    },
-    {
-      "title": "bananas",
-      "done": false,
-      "id": 5
-    },
-    {
-      "title": "poop",
-      "done": false,
-      "id": 6
-    },
-    {
-      "title": "hello",
-      "done": false,
-      "id": 7
+      "done": true
     }
   ],
   "spice-girls": [

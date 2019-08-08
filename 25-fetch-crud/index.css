@@ -17,5 +17,5 @@ ol.ui.list li:before {
 }
 .done {
   text-decoration: line-through;
-  transform: rotateX(360deg);
+  transform: rotateZ(360deg);
 }
