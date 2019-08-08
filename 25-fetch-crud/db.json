@@ -1,0 +1,51 @@
+{
+  "to-do-items": [
+    {
+      "id": 1,
+      "title": "Walk the cat",
+      "done": true
+    },
+    {
+      "title": "Learn how to apply Fetch to front-end problems",
+      "id": 3,
+      "done": false
+    },
+    {
+      "title": "WHEEEEEE",
+      "done": false,
+      "id": 4
+    },
+    {
+      "title": "bananas",
+      "done": false,
+      "id": 5
+    },
+    {
+      "title": "poop",
+      "done": false,
+      "id": 6
+    },
+    {
+      "title": "hello",
+      "done": false,
+      "id": 7
+    }
+  ],
+  "spice-girls": [
+    {
+      "name": "Victoria Beckham",
+      "adjective": "Posh",
+      "id": 3
+    },
+    {
+      "adjective": "Baby",
+      "name": "Emma Bunton",
+      "id": 4
+    },
+    {
+      "adjective": "Sporty",
+      "name": "Melanie Chisolm",
+      "id": 5
+    }
+  ]
+}
