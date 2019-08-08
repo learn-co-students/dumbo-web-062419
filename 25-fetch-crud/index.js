@@ -6,7 +6,10 @@ function nukeFromOrbit(event){
   }).then(res => res.json())
     .then(data => {
       const li = document.querySelector("#to-do-" + id)
-      li.remove()
+      li.classList.add("nuke")
+      li.addEventListener("transitionend", function(){
+        li.remove()
+      })
     })
 }
 

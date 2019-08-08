@@ -12,10 +12,13 @@ ol.ui.list li:before {
   display: none;
 }
 .item {
-  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, opacity .5s ease-in-out;
   backface-visibility: hidden;
 }
 .done {
   text-decoration: line-through;
   transform: rotateZ(360deg);
+}
+.nuke {
+  opacity: 0;
 }
