@@ -1,0 +1,21 @@
+.container {
+  max-width: 420px;
+  padding: 20px;
+}
+.delete-button {
+  width: 68px;
+}
+#to-do-items {
+  margin-left: 0;
+}
+ol.ui.list li:before {
+  display: none;
+}
+.item {
+  transition: transform .5s ease-in-out;
+  backface-visibility: hidden;
+}
+.done {
+  text-decoration: line-through;
+  transform: rotateZ(360deg);
+}
