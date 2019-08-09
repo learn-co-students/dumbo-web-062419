@@ -1,7 +1,7 @@
 
 function nukeFromOrbit(event){
   const id = event.target.dataset.id
-  fetch(`http://to-do-list-git-rich-die-prying.herokuapp.com/to_do_items/${ id }`, {
+  fetch(`https://to-do-list-git-rich-die-prying.herokuapp.com/to_do_items/${ id }`, {
     method: "DELETE"
   }).then(res => res.json())
     .then(data => {
@@ -29,7 +29,7 @@ function updateToDoDoneness(event){
 
   //optimistic
 
-  fetch(`http://to-do-list-git-rich-die-prying.herokuapp.com/to_do_items/${ id }`, {
+  fetch(`https://to-do-list-git-rich-die-prying.herokuapp.com/to_do_items/${ id }`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json", //sending
@@ -88,7 +88,7 @@ function createToDo(event){
 
   event.target.reset()
 
-  fetch("http://to-do-list-git-rich-die-prying.herokuapp.com/to_do_items", {
+  fetch("https://to-do-list-git-rich-die-prying.herokuapp.com/to_do_items", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function(){
   const form = document.getElementById("new-to-do")
   form.addEventListener("submit", createToDo)
 
-  fetch("http://to-do-list-git-rich-die-prying.herokuapp.com/to_do_items")
+  fetch("https://to-do-list-git-rich-die-prying.herokuapp.com/to_do_items")
     .then(function(response){
       return response.json()
     }).then(slapToDosOnTheDOM)
