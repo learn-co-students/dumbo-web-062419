@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @full_stack_developer.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @full_stack_developer.email %>
+</p>
+
+<p>
+  <strong>Number of languages learned:</strong>
+  <%= @full_stack_developer.number_of_languages_learned %>
+</p>
+
+<%= link_to 'Edit', edit_full_stack_developer_path(@full_stack_developer) %> |
+<%= link_to 'Back', full_stack_developers_path %>

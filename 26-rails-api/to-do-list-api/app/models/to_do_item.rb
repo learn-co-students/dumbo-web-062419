@@ -1,0 +1,2 @@
+class ToDoItem < ApplicationRecord
+end

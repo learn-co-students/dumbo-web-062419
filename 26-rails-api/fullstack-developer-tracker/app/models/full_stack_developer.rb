@@ -1,0 +1,2 @@
+class FullStackDeveloper < ApplicationRecord
+end
