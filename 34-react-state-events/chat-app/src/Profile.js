@@ -2,9 +2,6 @@ import React from 'react'
 
 class Profile extends React.Component {
   render() {
-
-    console.log('im the profile props ', this.props)
-
     return (
       <div>
         <img src={this.props.imageUrl} />
