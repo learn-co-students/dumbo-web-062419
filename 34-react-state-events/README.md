@@ -57,13 +57,13 @@ Part of completing this step also means deciding where props are passed down. We
 
 Parentheses `()` are props.
 - App
-  - Sidebar **(currentUser, channelNames)**
-    - Profile **(currentUser)**
+  - Sidebar **(user, channelNames)**
+    - Profile **(username, imageUrl)**
     - ChannelList **(channelNames)**
-  - Chat **(currentUser, channel)**
+  - Chat **(user, channel)**
     - MessageList **(channelName, messages)**
       - Message **(profilePhoto, text)**
-    - MessageCreator **(currentUser)**
+    - MessageCreator **(user)**
 
 ### Should it be state?
 
@@ -125,10 +125,10 @@ Parentheses `()` are props.
 Squigglies/curlies `{}` are state.
 
 - App
-  - Sidebar (currentUser, channelNames)
+  - Sidebar (user, channelNames)
     - Profile
     - ChannelList **{channelNames}**
-  - Chat (currentUser, channel)
+  - Chat (user, channel)
     - MessageList (channelName, messages)
       - Message (profilePhoto, text)
-    - MessageCreator (currentUser) **{text}**
+    - MessageCreator **{text}**
