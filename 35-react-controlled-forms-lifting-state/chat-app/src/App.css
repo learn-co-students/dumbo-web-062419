@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+*:focus {outline:0;}
+
+body {
+  margin: 0;
+}
+
+img {
+  border-radius: 35%;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  margin-right: 15px;
+  min-width: 150px;
+  background: #525252;
+  padding: 20px;
+  color: white;
+}
+
+.profile h4 {
+  margin: 0;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.profile-photo {
+  height: 100px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  background-image: none;
+  background-position: 0;
+  cursor: pointer;
+  font-weight: 100;
+  padding: 5px 0;
+}
+
+.sidebar input {
+  height: 15px;
+  border: none;
+  line-height: 15px;
+  padding: 3px 5px;
+}
+
+.sidebar button {
+  height: 21px;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.message {
+  display: flex;
+  margin: 20px 10px;
+}
+
+.message img {
+  height: 50px;
+}
+
+.message .username {
+  font-size: 10px;
+  font-weight: bold;
+  margin: 0;
+  font-style: italic;
+}
+
+.message .text {
+  font-size: 13px;
+  margin: 5px 10px;
+  font-weight: 100;
+}
+
+.chat {
+  width: 73%;
+}
+
+.chat form {
+  position: absolute;
+  bottom: 0;
+  margin: 30px 0px;
+  width: 70%;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.chat input[type="text"] {
+  width: 80%;
+  border: 0;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.chat input[type="submit"] {
+  border: none;
+  height: 40px;
+  background: black;
+  color: white;
+  position: absolute;
+  right: -1px;
+  top: 0px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  width: 110px;
+  cursor: pointer;
+}
