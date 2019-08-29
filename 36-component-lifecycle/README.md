@@ -1,8 +1,4 @@
-# React: Component Lifecycle
-
-
-
-
+# React: Component Lifecycle + Fetch
 
 
 ## Learning Goals
@@ -11,17 +7,6 @@
 * List component lifecycle methods
 * Describe why we might implement a lifecycle method in a component
 * Use `fetch` to persist data using react
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### Example: ActiveRecord Lifecycle Methods
@@ -35,11 +20,6 @@
 before		  after	       before	    after
 validation	validation	 create	    create
 ```
-
-
-
-
-
 
 
 
@@ -59,26 +39,6 @@ http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 * ~~As a user, I can load my channels from my server when my app loads~~
 * ~~As a user, I can save channels I create~~
 * ~~As a user, I can save messages I post to a channel~~
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
