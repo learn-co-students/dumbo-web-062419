@@ -12,13 +12,13 @@
 ### Example: ActiveRecord Lifecycle Methods
 
 ```
-    Validation			          Create
-	   \/						            \/
+    Validation	         		Create
+	   \/		      		    \/
 
-|———--|——————|———-----———|———--|--———|>
-/\ 		       /\		       /\		      /\
-before		  after	       before	    after
-validation	validation	 create	    create
+|———-------|—--—---————|———-----———|—---——--|--—------——|>
+/\ 		       /\      	  /\   	  		/\
+before		     after	  before	 	after
+validation	validation     	  create	  	create
 ```
 
 
