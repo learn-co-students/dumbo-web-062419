@@ -1,6 +1,6 @@
-# React: State, Events, Forms, Conditional Rendering
+# React: Controlled Forms, Inverse Data Flow, & Lifting State
 
-![Ott wireframe](ott-wireframe.png)
+![Ott wireframe](wireframe.png)
 
 
 ## Learning Goals
