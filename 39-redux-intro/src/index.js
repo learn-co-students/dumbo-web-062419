@@ -3,25 +3,48 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import logo from "./logo.svg";
 import "./App.css";
+import { createStore } from 'redux'
+
+const reducer = (state={ count: 0 }, action) => {
+  console.log("our reducer's state: ", state)
+  console.log("our reducer's action: ", action)
+
+  switch (action.type) {
+    case "UPDATE_COUNT":
+      return { count: action.count }
+
+    case "INCREMENT_COUNT":
+      return { count: state.count + 1 }
+
+    case "DECREMENT_COUNT":
+      return { count: state.count - 1 }
+
+    default:
+      return state
+  }
+}
+
+const store = createStore(reducer)
+debugger
 
 class App extends Component {
-  state = {
-    count: 0
-  }
+  // state = {
+  //   count: 0
+  // }
 
   increment = () => {
-    this.setState({ count: this.state.count + 1 });
+    // this.setState({ count: this.state.count + 1 });
   };
 
   decrement = () => {
-    this.setState({ count: this.state.count - 1 });
+    // this.setState({ count: this.state.count - 1 });
   };
 
   render() {
     return (
       <div className="App">
-        <Header count={this.state.count} />
-        <Counter count={this.state.count} increment={this.increment} decrement={this.decrement} />
+        <Header count={/*this.state.count*/null} />
+        <Counter count={/*this.state.count*/null} increment={this.increment} decrement={this.decrement} />
       </div>
     );
   }
